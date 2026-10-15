@@ -1,0 +1,835 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>XAUUSD Macro Glass – Phân Tích Xu Hướng Vĩ Mô</title>
+  <!-- [ĐÃ THAY ĐỔI]: Liên kết tới file style.css tách riêng -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- [NÂNG CẤP]: Công tắc chuyển đổi giao diện Sáng (00:05) / Tối (00:23) thuần CSS -->
+  <input type="checkbox" id="harmony-theme-switch" class="sr-only-input" aria-label="Chuyển đổi giao diện Sáng hoặc Tối" />
+
+  <div class="harmony-theme-shell">
+
+    <!-- HẬU CẢNH ĐA SẮC HARMONYOS 7 (AMBIENT VIBRANT BACKGROUND) -->
+    <div class="ambient-canvas" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="orb orb-4"></div>
+    </div>
+
+    <div class="page-wrapper" id="top-overview">
+
+      <!-- HEADER: THƯƠNG HIỆU, NHÃN DỮ LIỆU TĨNH & CÔNG TẮC SÁNG/TỐI -->
+      <header class="top-bar liquid-glass-clear caustic-rim">
+        <div class="brand-group">
+          <div class="brand-orb">Au</div>
+          <div>
+            <h1 class="brand-title">XAUUSD Macro Glass – Phân Tích Xu Hướng Vĩ Mô</h1>
+            <p class="brand-subtitle">Hệ thống phân tích kịch bản có điều kiện &amp; độ lệch chuẩn vĩ mô Hoa Kỳ</p>
+          </div>
+        </div>
+
+        <div class="status-pills">
+          <span class="pill-badge liquid-glass-panel">
+            <span class="dot-pulse"></span>
+            Dữ liệu tĩnh / Cập nhật thủ công
+          </span>
+
+          <!-- Nút kính chuyển đổi Light / Dark Mode thuần CSS -->
+          <label for="harmony-theme-switch" class="pill-badge liquid-glass-panel theme-toggle-label" title="Đổi chế độ nền Sáng / Tối">
+            <span class="theme-icon-light">☀️ Nền Sáng (00:05)</span>
+            <span class="theme-icon-dark">🌙 Nền Tối (00:23)</span>
+          </label>
+
+          <a href="#disclaimer-section" class="pill-badge liquid-glass-panel badge-amber-link">
+            ⚠️ Miễn trừ trách nhiệm
+          </a>
+        </div>
+      </header>
+
+      <!-- =======================================================================
+           PHẦN 1: HERO / TỔNG QUAN VÀNG & CỤM CONTROL CENTER HARMONYOS 7
+           ======================================================================= -->
+      <section class="hero-grid" aria-label="Tổng quan thị trường Vàng và Tin tức vĩ mô">
+        
+        <!-- Thẻ kính chính: Giá tham chiếu & Bối cảnh vĩ mô -->
+        <div class="hero-main liquid-glass-panel interactive-card caustic-rim">
+          <div class="hero-header-row">
+            <!-- [CHỖ SỬA THỦ CÔNG 1]: CẬP NHẬT GIÁ VÀNG THAM CHIẾU TẠI ĐÂY -->
+            <div class="xau-price-block">
+              <span class="xau-label">● XAUUSD / VÀNG THẾ GIỚI (THAM CHIẾU)</span>
+              <div class="xau-price-value">$2,665.50</div>
+              <div class="hero-meta-badges">
+                <span class="placeholder-tag">📌 Giá Placeholder tĩnh – Không kết nối API thời gian thực</span>
+                <span class="pill-badge trend-neutral">Xu hướng ngắn hạn: Giằng co theo Lợi suất Mỹ &amp; DXY</span>
+              </div>
+            </div>
+
+            <!-- Khối đếm mốc sự kiện tĩnh (Static Event Marker) -->
+            <div class="next-event-glass liquid-glass-clear">
+              <span class="next-event-label">⏰ TÂM ĐIỂM TIẾP THEO</span>
+              <strong class="next-event-name">Non-Farm Payrolls &amp; FOMC</strong>
+              <span class="next-event-sub">Cập nhật thủ công theo lịch tuần</span>
+            </div>
+          </div>
+
+          <!-- Hộp nhấn mạnh thực tế từ ảnh chụp Forex Factory tháng 10/2026 -->
+          <div class="hero-highlight-box">
+            <div class="hero-highlight-title">
+              <span>🔍 Thực tế lịch sử từ Forex Factory (14–15/10/2026): Dự báo (Forecast) thường xuyên lệch xa thực tế!</span>
+            </div>
+            <p class="hero-highlight-text">
+              Số liệu thực tế ngày <strong>15/10/2026</strong> chứng minh rủi ro nếu giao dịch mù quáng theo cột Dự báo: 
+              <strong>PPI m/m</strong> được dự báo chỉ <strong>0.6%</strong> nhưng thực tế công bố vọt lên <strong>1.3%</strong> (cao gấp hơn 2 lần dự báo); 
+              <strong>Core PPI m/m</strong> dự báo <strong>0.3%</strong> nhưng thực tế ra <strong>0.7%</strong>; 
+              <strong>Core Retail Sales m/m</strong> dự báo <strong>0.6%</strong> nhưng thực tế đạt <strong>0.9%</strong>. 
+              Vì vậy, phản ứng của giá Vàng phụ thuộc vào <strong>độ lệch bất ngờ (Surprise Deviation)</strong> so với kỳ vọng chứ không theo một công thức cố định.
+            </p>
+          </div>
+        </div>
+
+        <!-- [NÂNG CẤP]: Cụm Control Center chuẩn bố cục giây 00:06 - 00:10 trong video -->
+        <aside class="hero-control-center liquid-glass-clear interactive-card caustic-rim" aria-label="Bảng điều khiển trạng thái vĩ mô">
+          <div class="cc-bento-layout">
+            
+            <!-- Cột trái: 2 nút viên thuốc ngang Hồng Đỏ & Xanh Lam (Giống 超级终端 & 睡眠模式 ở 00:07) -->
+            <div class="cc-left-pills">
+              <div class="cc-pill-btn cc-pill-pink">
+                <div class="cc-icon-circle">🔥</div>
+                <div>
+                  <div class="cc-pill-sub">Cú sốc PPI 15/10</div>
+                  <div class="cc-pill-main">Thực tế +1.3%</div>
+                </div>
+              </div>
+
+              <div class="cc-pill-btn cc-pill-indigo">
+                <div class="cc-icon-circle">📊</div>
+                <div>
+                  <div class="cc-pill-sub">Core CPI 14/10</div>
+                  <div class="cc-pill-main">Nóng +0.3%</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cột phải: 2 thanh ống kính lỏng DỌC song song (Giống thanh Độ sáng & Âm lượng ở 00:08) -->
+            <div class="cc-right-vertical-sliders">
+              <div class="v-capsule-slider" title="Độ lệch PPI m/m so với dự báo">
+                <div class="v-capsule-fill fill-blue-glow" style="height: 82%;"></div>
+                <div class="v-capsule-meta">
+                  <span class="v-capsule-val">1.3%</span>
+                  <span class="v-capsule-icon">☀️</span>
+                  <span class="v-capsule-lbl">PPI m/m</span>
+                </div>
+              </div>
+
+              <div class="v-capsule-slider" title="Mức độ nhạy cảm biến động phiên Mỹ">
+                <div class="v-capsule-fill fill-gold-glow" style="height: 74%;"></div>
+                <div class="v-capsule-meta">
+                  <span class="v-capsule-val">Cao</span>
+                  <span class="v-capsule-icon">⚡</span>
+                  <span class="v-capsule-lbl">Biến động</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hàng nút kính tròn phía dưới (Giống hàng icon tròn trong Control Center ở 00:06 & 00:18) -->
+          <div class="cc-round-orbs-row">
+            <a href="#calendar-section" class="cc-round-orb active-orb" title="Lịch Kinh Tế">
+              <span class="orb-ico">📅</span>
+              <span class="orb-txt">Lịch tin</span>
+            </a>
+            <a href="#analysis-section" class="cc-round-orb" title="Kịch bản Vĩ mô">
+              <span class="orb-ico">🔬</span>
+              <span class="orb-txt">Kịch bản</span>
+            </a>
+            <a href="#volatility-section" class="cc-round-orb" title="Biên độ Lịch sử">
+              <span class="orb-ico">📊</span>
+              <span class="orb-txt">Biên độ</span>
+            </a>
+            <a href="#disclaimer-section" class="cc-round-orb warn-orb" title="Miễn trừ trách nhiệm">
+              <span class="orb-ico">🛡️</span>
+              <span class="orb-txt">Lưu ý</span>
+            </a>
+          </div>
+        </aside>
+
+      </section>
+
+      <!-- =======================================================================
+           PHẦN 2: LỊCH KINH TẾ & CHUỖI LỊCH SỬ ĐỘ LỆCH FOREX FACTORY
+           ======================================================================= -->
+      <section id="calendar-section" aria-labelledby="calendar-heading">
+        <div class="section-header">
+          <div>
+            <h2 id="calendar-heading" class="section-title">📅 Lịch Kinh Tế &amp; Hồ Sơ Độ Lệch Dự Báo</h2>
+            <p class="section-desc">
+              Ghi nhận số liệu thực tế từ Forex Factory (14–15/10/2026) và các sự kiện sắp tới. Chạm vào <strong>"Xem chuỗi lệch lịch sử"</strong> trên mỗi thẻ để mở rộng dữ liệu các tháng trước.
+            </p>
+          </div>
+        </div>
+
+        <!-- [CHỖ SỬA THỦ CÔNG 2]: SỬA NGÀY GIỜ VÀ CON SỐ TRONG CÁC THẺ DƯỚI ĐÂY -->
+        <div class="calendar-grid">
+
+          <!-- Card 1: CPI & Core CPI (Số liệu thực tế ngày 14/10/2026) -->
+          <article class="calendar-card liquid-glass-panel interactive-card caustic-rim">
+            <div>
+              <div class="cal-top">
+                <div>
+                  <h3 class="cal-title">USD CPI &amp; Core CPI (m/m, y/y)</h3>
+                  <p class="cal-time">Kỳ công bố: 14/10/2026 – 19:30 (Giờ VN)</p>
+                </div>
+                <span class="impact-badge impact-high">Ảnh hưởng: Rất Cao</span>
+              </div>
+
+              <div class="cal-numbers-grid">
+                <div>
+                  <div class="num-col-label">Actual (Thực tế)</div>
+                  <div class="num-col-val val-actual-hot">3.7% <small>(y/y)</small></div>
+                </div>
+                <div>
+                  <div class="num-col-label">Forecast (Dự báo)</div>
+                  <div class="num-col-val val-forecast-miss">3.6%</div>
+                </div>
+                <div>
+                  <div class="num-col-label">Previous (Kỳ trước)</div>
+                  <div class="num-col-val">3.4%</div>
+                </div>
+              </div>
+
+              <div class="cal-deviation-note trend-bearish">
+                <strong>Kỳ 14/10/2026:</strong> Core CPI m/m ra <strong>0.3%</strong> (Dự báo 0.2%), Core CPI y/y ra <strong>2.6%</strong> (Dự báo 2.5%), CPI m/m đạt <strong>0.6%</strong> (Kỳ trước 0.4%).
+              </div>
+            </div>
+
+            <!-- [NÂNG CẤP]: Ngăn kéo bung mở lịch sử Forex Factory (Giống giây 00:08-00:11) -->
+            <details class="glass-history-drawer">
+              <summary class="drawer-summary">
+                <span>📂 Xem chuỗi lệch lịch sử (05/2026 – 10/2026)</span>
+                <span class="drawer-chevron">▾</span>
+              </summary>
+              <div class="drawer-body">
+                <table class="mini-history-table">
+                  <thead>
+                    <tr>
+                      <th>Kỳ (CPI y/y &amp; Core m/m)</th>
+                      <th>Actual</th>
+                      <th>Forecast</th>
+                      <th>Previous</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>14/10/2026 (CPI y/y)</td>
+                      <td class="val-actual-hot">3.7%</td>
+                      <td>3.6%</td>
+                      <td>3.4%</td>
+                    </tr>
+                    <tr>
+                      <td>14/10/2026 (Core m/m)</td>
+                      <td class="val-actual-hot">0.3%</td>
+                      <td>0.2%</td>
+                      <td>0.3%</td>
+                    </tr>
+                    <tr>
+                      <td>11/09/2026 (Core m/m)</td>
+                      <td class="val-actual-hot">0.3%</td>
+                      <td>0.2%</td>
+                      <td>0.2%</td>
+                    </tr>
+                    <tr>
+                      <td>14/07/2026 (CPI y/y)</td>
+                      <td class="val-actual-cool">3.5%</td>
+                      <td>3.8%</td>
+                      <td>4.2%</td>
+                    </tr>
+                    <tr>
+                      <td>12/05/2026 (Core m/m)</td>
+                      <td class="val-actual-hot">0.4%</td>
+                      <td>0.3%</td>
+                      <td>0.2%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+          </article>
+
+          <!-- Card 2: PPI & Core PPI (Số liệu thực tế ngày 15/10/2026) -->
+          <article class="calendar-card liquid-glass-panel interactive-card caustic-rim">
+            <div>
+              <div class="cal-top">
+                <div>
+                  <h3 class="cal-title">USD PPI &amp; Core PPI (m/m)</h3>
+                  <p class="cal-time">Kỳ công bố: 15/10/2026 – 19:30 (Giờ VN)</p>
+                </div>
+                <span class="impact-badge impact-high">Ảnh hưởng: Rất Cao</span>
+              </div>
+
+              <div class="cal-numbers-grid">
+                <div>
+                  <div class="num-col-label">Actual (Thực tế)</div>
+                  <div class="num-col-val val-actual-hot">1.3% <small>(PPI)</small></div>
+                </div>
+                <div>
+                  <div class="num-col-label">Forecast (Dự báo)</div>
+                  <div class="num-col-val val-forecast-miss">0.6%</div>
+                </div>
+                <div>
+                  <div class="num-col-label">Previous (Kỳ trước)</div>
+                  <div class="num-col-val">0.5%</div>
+                </div>
+              </div>
+
+              <div class="cal-deviation-note trend-bearish">
+                <strong>Sai số cực lớn (15/10/2026):</strong> PPI m/m vọt lên <strong>1.3%</strong> (Dự báo 0.6%); Core PPI m/m đạt <strong>0.7%</strong> (gấp hơn 2 lần mức dự báo 0.3%).
+              </div>
+            </div>
+
+            <details class="glass-history-drawer">
+              <summary class="drawer-summary">
+                <span>📂 Xem chuỗi lệch lịch sử (05/2026 – 10/2026)</span>
+                <span class="drawer-chevron">▾</span>
+              </summary>
+              <div class="drawer-body">
+                <table class="mini-history-table">
+                  <thead>
+                    <tr>
+                      <th>Kỳ (PPI &amp; Core PPI m/m)</th>
+                      <th>Actual</th>
+                      <th>Forecast</th>
+                      <th>Previous</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>15/10/2026 (PPI m/m)</td>
+                      <td class="val-actual-hot">1.3%</td>
+                      <td>0.6%</td>
+                      <td>0.5%</td>
+                    </tr>
+                    <tr>
+                      <td>15/10/2026 (Core PPI)</td>
+                      <td class="val-actual-hot">0.7%</td>
+                      <td>0.3%</td>
+                      <td>0.2%</td>
+                    </tr>
+                    <tr>
+                      <td>15/07/2026 (PPI m/m)</td>
+                      <td class="val-actual-cool">-0.3%</td>
+                      <td>0.0%</td>
+                      <td>0.6%</td>
+                    </tr>
+                    <tr>
+                      <td>11/06/2026 (PPI m/m)</td>
+                      <td class="val-actual-hot">1.1%</td>
+                      <td>0.7%</td>
+                      <td>1.1%</td>
+                    </tr>
+                    <tr>
+                      <td>13/05/2026 (Core PPI)</td>
+                      <td class="val-actual-hot">1.0%</td>
+                      <td>0.3%</td>
+                      <td>0.2%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+          </article>
+
+          <!-- Card 3: Core Retail Sales m/m (Số liệu thực tế ngày 15/10/2026) -->
+          <article class="calendar-card liquid-glass-panel interactive-card caustic-rim">
+            <div>
+              <div class="cal-top">
+                <div>
+                  <h3 class="cal-title">USD Core Retail Sales (m/m)</h3>
+                  <p class="cal-time">Kỳ công bố: 15/10/2026 – 19:30 (Giờ VN)</p>
+                </div>
+                <span class="impact-badge impact-high">Ảnh hưởng: Cao</span>
+              </div>
+
+              <div class="cal-numbers-grid">
+                <div>
+                  <div class="num-col-label">Actual (Thực tế)</div>
+                  <div class="num-col-val val-actual-hot">0.9%</div>
+                </div>
+                <div>
+                  <div class="num-col-label">Forecast (Dự báo)</div>
+                  <div class="num-col-val val-forecast-miss">0.6%</div>
+                </div>
+                <div>
+                  <div class="num-col-label">Previous (Kỳ trước)</div>
+                  <div class="num-col-val">1.4%</div>
+                </div>
+              </div>
+
+              <div class="cal-deviation-note trend-neutral">
+                <strong>Diễn giải (15/10/2026):</strong> Doanh số bán lẻ cốt lõi đạt <strong>0.9%</strong>, vượt xa dự báo <strong>0.6%</strong>, khẳng định tiêu dùng Mỹ vẫn trụ vững.
+              </div>
+            </div>
+
+            <details class="glass-history-drawer">
+              <summary class="drawer-summary">
+                <span>📂 Xem chuỗi lệch lịch sử (06/2026 – 10/2026)</span>
+                <span class="drawer-chevron">▾</span>
+              </summary>
+              <div class="drawer-body">
+                <table class="mini-history-table">
+                  <thead>
+                    <tr>
+                      <th>Kỳ (Core Retail m/m)</th>
+                      <th>Actual</th>
+                      <th>Forecast</th>
+                      <th>Previous</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>15/10/2026</td>
+                      <td class="val-actual-hot">0.9%</td>
+                      <td>0.6%</td>
+                      <td>1.4%</td>
+                    </tr>
+                    <tr>
+                      <td>16/09/2026</td>
+                      <td class="val-actual-hot">1.4%</td>
+                      <td>0.6%</td>
+                      <td>-0.2%</td>
+                    </tr>
+                    <tr>
+                      <td>14/08/2026</td>
+                      <td class="val-actual-cool">-0.3%</td>
+                      <td>0.2%</td>
+                      <td>-0.2%</td>
+                    </tr>
+                    <tr>
+                      <td>16/07/2026</td>
+                      <td class="val-actual-cool">-0.2%</td>
+                      <td>0.0%</td>
+                      <td>1.0%</td>
+                    </tr>
+                    <tr>
+                      <td>17/06/2026</td>
+                      <td class="val-actual-hot">0.8%</td>
+                      <td>0.6%</td>
+                      <td>0.7%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+          </article>
+
+          <!-- Card 4: NFP & FOMC Sắp tới (Dữ liệu mẫu Placeholder) -->
+          <article class="calendar-card liquid-glass-panel interactive-card caustic-rim">
+            <div>
+              <div class="cal-top">
+                <div>
+                  <h3 class="cal-title">USD Non-Farm Payrolls &amp; FOMC</h3>
+                  <p class="cal-time">Kỳ sắp tới: [Dữ liệu mẫu / Tự cập nhật]</p>
+                </div>
+                <span class="impact-badge impact-high">Ảnh hưởng: Cực Cao</span>
+              </div>
+
+              <div class="cal-numbers-grid">
+                <div>
+                  <div class="num-col-label">Actual (Thực tế)</div>
+                  <div class="num-col-val" style="color: var(--text-muted);">Chờ tin</div>
+                </div>
+                <div>
+                  <div class="num-col-label">Forecast (Mẫu)</div>
+                  <div class="num-col-val">185K</div>
+                </div>
+                <div>
+                  <div class="num-col-label">Previous (Mẫu)</div>
+                  <div class="num-col-val">223K</div>
+                </div>
+              </div>
+
+              <div class="cal-deviation-note trend-bullish">
+                <strong>Lưu ý Placeholder:</strong> Con số Forecast/Previous của NFP ở trên là dữ liệu mẫu minh họa bố cục để bạn tự cập nhật trước phiên công bố.
+              </div>
+            </div>
+
+            <details class="glass-history-drawer">
+              <summary class="drawer-summary">
+                <span>📂 Hướng dẫn đọc tổ hợp 3 chỉ số NFP</span>
+                <span class="drawer-chevron">▾</span>
+              </summary>
+              <div class="drawer-body">
+                <p style="font-size: 0.8rem; color: var(--text-secondary);">
+                  Khi NFP công bố, không bao giờ chỉ nhìn 1 con số việc làm tạo mới. Hãy kiểm tra đồng thời: <strong>(1) Non-Farm Employment Change</strong>, <strong>(2) Unemployment Rate</strong>, và <strong>(3) Average Hourly Earnings m/m</strong>.
+                </p>
+              </div>
+            </details>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- =======================================================================
+           PHẦN 3: PHÂN TÍCH TỪNG CHỈ SỐ & BỘ LỌC "GIỌT NƯỚC TRƯỢT" THUẦN CSS
+           ======================================================================= -->
+      <section id="analysis-section" aria-labelledby="analysis-heading">
+        <div class="section-header">
+          <div>
+            <h2 id="analysis-heading" class="section-title">🔬 Phân Tích Kịch Bản Có Điều Kiện Theo Chỉ Số</h2>
+            <p class="section-desc">
+              Chạm vào thanh điều hướng kính lỏng bên dưới để lọc từng nhóm chỉ số (Hiệu ứng giọt nước trượt thuần CSS 100% như giây 00:20–00:22 trong video).
+            </p>
+          </div>
+        </div>
+
+        <div class="macro-filter-container">
+          <!-- Radio inputs điều khiển hiệu ứng trượt giọt nước Pure CSS -->
+          <input type="radio" name="macro-tab" id="tab-all" class="filter-radio" checked />
+          <input type="radio" name="macro-tab" id="tab-cpi" class="filter-radio" />
+          <input type="radio" name="macro-tab" id="tab-ppi" class="filter-radio" />
+          <input type="radio" name="macro-tab" id="tab-nfp" class="filter-radio" />
+          <input type="radio" name="macro-tab" id="tab-fomc" class="filter-radio" />
+
+          <!-- Thanh điều hướng viên thuốc (Floating Liquid Pill Switcher) -->
+          <nav class="liquid-pill-nav liquid-glass-clear caustic-rim" aria-label="Bộ lọc nhóm chỉ số vĩ mô">
+            <div class="liquid-droplet" aria-hidden="true"></div>
+            <label for="tab-all" class="pill-tab-label">Tất cả (4)</label>
+            <label for="tab-cpi" class="pill-tab-label">1. CPI</label>
+            <label for="tab-ppi" class="pill-tab-label">2. PPI &amp; Bán lẻ</label>
+            <label for="tab-nfp" class="pill-tab-label">3. NFP</label>
+            <label for="tab-fomc" class="pill-tab-label">4. FOMC</label>
+          </nav>
+
+          <!-- Danh sách các thẻ phân tích chi tiết -->
+          <div class="indicator-cards-stack">
+
+            <!-- 1. CHỈ SỐ CPI & CORE CPI -->
+            <article class="indicator-section-card card-cpi liquid-glass-panel interactive-card caustic-rim">
+              <div class="ind-header">
+                <div class="ind-title-group">
+                  <h3>1. Chỉ Số Giá Tiêu Dùng – CPI &amp; Core CPI (m/m, y/y)</h3>
+                </div>
+                <span class="pill-badge trend-bearish">Trọng tâm: Thước đo lạm phát tiêu dùng trực tiếp</span>
+              </div>
+
+              <p class="ind-meaning">
+                <strong>Đo lường điều gì &amp; Vì sao Fed quan tâm:</strong> CPI đo mức thay đổi giá cả rổ hàng hóa dịch vụ từ góc nhìn người tiêu dùng; <strong>Core CPI</strong> loại bỏ giá thực phẩm và năng lượng để phản ánh xu hướng lạm phát nền tảng. Trong lịch sử Forex Factory (như kỳ 14/07/2026: CPI y/y dự báo 3.8% nhưng thực tế hạ xuống 3.5%; hay kỳ 14/10/2026: CPI y/y dự báo 3.6% nhưng thực tế lên 3.7%), những cú lệch từ <strong>±0.2% trở lên</strong> thường làm thay đổi mạnh kỳ vọng lãi suất của Fed.
+              </p>
+
+              <div class="scenario-table-wrap">
+                <table class="scenario-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 24%;">Kịch bản kết quả (So với Dự báo)</th>
+                      <th style="width: 38%;">Cơ chế truyền dẫn vĩ mô thông thường</th>
+                      <th style="width: 23%;">Xu hướng Vàng (XAUUSD)</th>
+                      <th style="width: 15%;">Độ tin cậy xu hướng</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Actual &gt; Forecast đáng kể</strong><br/><small>(Nóng hơn dự báo, ví dụ lệch +0.2% trở lên)</small></td>
+                      <td>Thị trường lo ngại Fed phải giữ lãi suất cao lâu hơn (Higher for Longer) → Lợi suất trái phiếu Mỹ (US10Y) và DXY thường bật tăng.</td>
+                      <td><span class="trend-badge trend-bearish">📉 Thường chịu áp lực giảm</span></td>
+                      <td><strong>Cao</strong><br/><small>(Ngắn hạn đầu phiên)</small></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Actual ≈ Forecast</strong><br/><small>(Khớp dự báo hoặc chỉ lệch ±0.1% nhẹ như 14/10/2026)</small></td>
+                      <td>Kỳ vọng đã được phản ánh một phần vào giá (Priced-in). Thị trường thường quét thanh khoản 2 đầu (whipsaw) và xét tiếp cấu phần dịch vụ/nhà ở.</td>
+                      <td><span class="trend-badge trend-neutral">⚖️ Trung tính / Quét 2 chiều</span></td>
+                      <td><strong>Trung bình – Thấp</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Actual &lt; Forecast đáng kể</strong><br/><small>(Hạ nhiệt nhanh hơn dự báo, như kỳ 14/07/2026)</small></td>
+                      <td>Áp lực lạm phát dịu lại → Gia tăng xác suất Fed sớm cắt giảm lãi suất → USD và lợi suất thực (Real Yields) thường suy yếu.</td>
+                      <td><span class="trend-badge trend-bullish">📈 Thường được hỗ trợ tăng</span></td>
+                      <td><strong>Cao</strong><br/><small>(Khi DXY đồng thuận giảm)</small></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="card-footnote">
+                📌 <em>Ghi chú: Đây là xu hướng tham khảo dựa trên logic kinh tế vĩ mô thông thường, không phải cam kết. Nếu có căng thẳng địa chính trị xảy ra cùng lúc, dòng tiền trú ẩn có thể đẩy Vàng tăng bất chấp CPI cao.</em>
+              </p>
+            </article>
+
+            <!-- 2. CHỈ SỐ PPI & CORE RETAIL SALES -->
+            <article class="indicator-section-card card-ppi liquid-glass-panel interactive-card caustic-rim">
+              <div class="ind-header">
+                <div class="ind-title-group">
+                  <h3>2. Chỉ Số Giá Sản Xuất (PPI / Core PPI) &amp; Doanh Số Bán Lẻ</h3>
+                </div>
+                <span class="pill-badge trend-neutral">Trọng tâm: Lạm phát đầu vào &amp; Sức khỏe chi tiêu</span>
+              </div>
+
+              <p class="ind-meaning">
+                <strong>Đo lường điều gì &amp; Vì sao Fed quan tâm:</strong> PPI đo lường chi phí đầu vào của nhà sản xuất (thường là chỉ báo sớm dẫn dắt CPI các tháng sau và cấu thành trực tiếp chỉ số PCE mà Fed ưa thích). Như bằng chứng từ Forex Factory ngày <strong>15/10/2026</strong> và <strong>13/05/2026</strong>: PPI là chỉ số có <strong>sai số dự báo cực lớn</strong> (15/10/2026: PPI m/m dự báo 0.6% nhưng ra 1.3%, Core PPI m/m dự báo 0.3% nhưng ra 0.7%; 13/05/2026: Core PPI dự báo 0.3% nhưng ra tới 1.0%).
+              </p>
+
+              <div class="scenario-table-wrap">
+                <table class="scenario-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 24%;">Kịch bản kết quả (So với Dự báo)</th>
+                      <th style="width: 38%;">Cơ chế truyền dẫn vĩ mô thông thường</th>
+                      <th style="width: 23%;">Xu hướng Vàng (XAUUSD)</th>
+                      <th style="width: 15%;">Độ tin cậy xu hướng</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>PPI &amp; Bán lẻ cùng vượt mạnh Forecast</strong><br/><small>(Như phiên 15/10/2026: PPI 1.3%, Bán lẻ 0.9%)</small></td>
+                      <td>Chi phí sản xuất tăng vọt kèm sức cầu tiêu dùng khỏe → Rủi ro lạm phát quay lại → Lợi suất trái phiếu Mỹ thường tăng, gây sức ép lên tài sản không sinh lời.</td>
+                      <td><span class="trend-badge trend-bearish">📉 Thường chịu áp lực giảm</span></td>
+                      <td><strong>Trung bình – Cao</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>PPI và Bán lẻ trái chiều nhau</strong><br/><small>(Ví dụ: PPI tăng nóng nhưng Bán lẻ sụt giảm âm)</small></td>
+                      <td>Tín hiệu kinh tế hỗn hợp (nguy cơ đình lạm nhẹ - Stagflation). USD phản ứng giật cục khiến Vàng thường biến động hai chiều trong biên độ hẹp hơn.</td>
+                      <td><span class="trend-badge trend-neutral">⚖️ Trung tính / Giằng co</span></td>
+                      <td><strong>Thấp</strong><br/><small>(Chờ xác nhận phiên Mỹ)</small></td>
+                    </tr>
+                    <tr>
+                      <td><strong>PPI &amp; Bán lẻ cùng thấp hơn Forecast</strong><br/><small>(Như kỳ 15/07/2026: PPI -0.3% vs Dự báo 0.0%)</small></td>
+                      <td>Áp lực giá đầu vào hạ nhiệt và tiêu dùng chậm lại → Củng cố kỳ vọng Fed nới lỏng chính sách tiền tệ → Hỗ trợ giá kim loại quý.</td>
+                      <td><span class="trend-badge trend-bullish">📈 Thường có xu hướng tăng</span></td>
+                      <td><strong>Trung bình – Cao</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="card-footnote">
+                📌 <em>Ghi chú: Đây là xu hướng tham khảo dựa trên logic kinh tế vĩ mô thông thường, không phải cam kết.</em>
+              </p>
+            </article>
+
+            <!-- 3. CHỈ SỐ NFP (NON-FARM PAYROLLS) -->
+            <article class="indicator-section-card card-nfp liquid-glass-panel interactive-card caustic-rim">
+              <div class="ind-header">
+                <div class="ind-title-group">
+                  <h3>3. Bảng Lương Phi Nông Nghiệp (NFP), Tỷ Lệ Thất Nghiệp &amp; Thu Nhập Giờ</h3>
+                </div>
+                <span class="pill-badge trend-bullish">Trọng tâm: Sức khỏe thị trường lao động Mỹ</span>
+              </div>
+
+              <p class="ind-meaning">
+                <strong>Đo lường điều gì &amp; Vì sao Fed quan tâm:</strong> Fed có "nhiệm vụ kép" (Dual Mandate) là ổn định giá cả và tối đa hóa việc làm. Do đó, bản tin NFP không chỉ nhìn vào một con số việc làm tạo mới, mà thị trường còn soi kỹ <strong>Tỷ lệ thất nghiệp (Unemployment Rate)</strong>, <strong>Thu nhập bình quân mỗi giờ (Average Hourly Earnings)</strong> và mức điều chỉnh giảm của 2 tháng trước đó.
+              </p>
+
+              <div class="scenario-table-wrap">
+                <table class="scenario-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 24%;">Kịch bản kết quả (So với Dự báo)</th>
+                      <th style="width: 38%;">Cơ chế truyền dẫn vĩ mô thông thường</th>
+                      <th style="width: 23%;">Xu hướng Vàng (XAUUSD)</th>
+                      <th style="width: 15%;">Độ tin cậy xu hướng</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Số việc làm NFP vượt xa Forecast + Thất nghiệp giảm</strong></td>
+                      <td>Thị trường lao động quá nóng → Fed không có lý do vội vàng hạ lãi suất mạnh → Đồng USD và lợi suất thường tăng vọt ngay khi ra tin.</td>
+                      <td><span class="trend-badge trend-bearish">📉 Thường chịu áp lực giảm</span></td>
+                      <td><strong>Cao</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>NFP cao hơn dự báo NHƯNG Tỷ lệ thất nghiệp tăng vọt</strong></td>
+                      <td>Báo cáo mâu thuẫn nội tại: thường tạo cú giật giảm giả (fakeout) của Vàng ở 5 phút đầu, sau đó đảo chiều khi thị trường đọc kỹ chi tiết thất nghiệp.</td>
+                      <td><span class="trend-badge trend-neutral">⚖️ Biến động quét 2 đầu</span></td>
+                      <td><strong>Thấp</strong><br/><small>(Rủi ro trượt giá cao)</small></td>
+                    </tr>
+                    <tr>
+                      <td><strong>NFP thấp hơn nhiều so với Forecast + Thất nghiệp tăng</strong></td>
+                      <td>Tín hiệu thị trường lao động suy yếu rõ rệt → Kích hoạt kỳ vọng Fed cắt giảm lãi suất nhanh hơn và thúc đẩy nhu cầu trú ẩn vào Vàng.</td>
+                      <td><span class="trend-badge trend-bullish">📈 Thường có xu hướng tăng</span></td>
+                      <td><strong>Cao</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="card-footnote">
+                📌 <em>Ghi chú: Đây là xu hướng tham khảo dựa trên logic kinh tế vĩ mô thông thường, không phải cam kết.</em>
+              </p>
+            </article>
+
+            <!-- 4. ỦY BAN THỊ TRƯỜNG MỞ LIÊN BANG (FOMC) -->
+            <article class="indicator-section-card card-fomc liquid-glass-panel interactive-card caustic-rim">
+              <div class="ind-header">
+                <div class="ind-title-group">
+                  <h3>4. Quyết Định Lãi Suất FOMC, Biểu Đồ Dot Plot &amp; Họp Báo Chủ Tịch Fed</h3>
+                </div>
+                <span class="pill-badge trend-bearish">Trọng tâm: Định hướng chính sách tiền tệ tương lai</span>
+              </div>
+
+              <p class="ind-meaning">
+                <strong>Đo lường điều gì &amp; Vì sao Fed quan tâm:</strong> Bản thân mức lãi suất công bố lúc 01:00/02:00 sáng (giờ VN) thường đã được thị trường dự đoán trước qua công cụ CME FedWatch. Yếu tố thực sự làm giá Vàng biến động mạnh là <strong>Tuyên bố chính sách (Statement)</strong>, <strong>Biểu đồ dự phóng lãi suất (Dot Plot)</strong> và giọng điệu của Chủ tịch Fed trong buổi họp báo 30 phút sau đó.
+              </p>
+
+              <div class="scenario-table-wrap">
+                <table class="scenario-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 24%;">Kịch bản định hướng (Tone giọng)</th>
+                      <th style="width: 38%;">Cơ chế truyền dẫn vĩ mô thông thường</th>
+                      <th style="width: 23%;">Xu hướng Vàng (XAUUSD)</th>
+                      <th style="width: 15%;">Độ tin cậy xu hướng</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Diều hâu hơn kỳ vọng (Hawkish Surprise)</strong><br/><small>(Nhấn mạnh rủi ro lạm phát, thu hẹp số lần hạ lãi suất trên Dot Plot)</small></td>
+                      <td>Lợi suất thực (TIPS) và USD tăng mạnh do thị trường phải định giá lại lộ trình lãi suất cao hơn trong tương lai.</td>
+                      <td><span class="trend-badge trend-bearish">📉 Thường chịu áp lực giảm</span></td>
+                      <td><strong>Cao</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Tuyên bố khớp kỳ vọng nhưng Họp báo xoay trục</strong></td>
+                      <td>Nhịp 1 (lúc ra biên bản) và Nhịp 2 (lúc Chủ tịch Fed trả lời câu hỏi 30 phút sau) thường ngược chiều nhau hoàn toàn.</td>
+                      <td><span class="trend-badge trend-neutral">⚖️ Đảo chiều giữa 2 nhịp</span></td>
+                      <td><strong>Trung bình – Thấp</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Bồ câu hơn kỳ vọng (Dovish Surprise)</strong><br/><small>(Lo ngại thị trường việc làm suy yếu, mở đường cắt giảm lãi suất)</small></td>
+                      <td>Chi phí cơ hội của việc nắm giữ Vàng giảm xuống khi lợi suất trái phiếu Mỹ và đồng USD suy yếu.</td>
+                      <td><span class="trend-badge trend-bullish">📈 Thường có xu hướng tăng</span></td>
+                      <td><strong>Cao</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="card-footnote">
+                📌 <em>Ghi chú: Đây là xu hướng tham khảo dựa trên logic kinh tế vĩ mô thông thường, không phải cam kết.</em>
+              </p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =======================================================================
+           PHẦN 4: BIÊN ĐỘ BIẾN ĐỘNG LỊCH SỬ (HISTORICAL VOLATILITY RANGE)
+           ======================================================================= -->
+      <section id="volatility-section" aria-labelledby="volatility-heading">
+        <div class="section-header">
+          <div>
+            <h2 id="volatility-heading" class="section-title">📊 Biên Độ Biến Động Lịch Sử Tham Khảo (XAUUSD)</h2>
+            <p class="section-desc">
+              Minh họa trực quan khoảng dao động trung bình (High – Low) của giá Vàng trong phiên Mỹ ở các lần công bố tin tức có độ lệch lớn trong quá khứ.
+            </p>
+          </div>
+        </div>
+
+        <div class="history-range-card liquid-glass-panel caustic-rim">
+          <div class="warning-banner-inline">
+            ⚠️ LƯU Ý BẮT BUỘC: Toàn bộ thanh số liệu dưới đây là <strong>DỮ LIỆU THỐNG KÊ MÔ TẢ QUÁ KHỨ</strong>, tuyệt đối <strong>KHÔNG PHẢI dự đoán giá Vàng sẽ tăng hay giảm bao nhiêu đô la cho lần công bố sắp tới</strong>. Biên độ thực tế luôn thay đổi tùy thanh khoản và bối cảnh thị trường.
+          </div>
+
+          <div class="range-bars-list">
+            
+            <div class="range-row">
+              <div>
+                <div class="range-label-title">Phiên CPI / Core CPI lệch mạnh</div>
+                <div class="range-label-sub">Khi Actual lệch ≥ 0.2% so với Forecast</div>
+              </div>
+              <div class="range-pill-outer">
+                <div class="range-pill-inner bar-cpi"></div>
+              </div>
+              <div class="range-stat-value">~ $25 – $48 / phiên</div>
+            </div>
+
+            <div class="range-row">
+              <div>
+                <div class="range-label-title">Phiên PPI &amp; Bán lẻ lệch mạnh</div>
+                <div class="range-label-sub">Ví dụ các kỳ lệch lớn như 13/05 &amp; 15/10/2026</div>
+              </div>
+              <div class="range-pill-outer">
+                <div class="range-pill-inner bar-ppi"></div>
+              </div>
+              <div class="range-stat-value">~ $18 – $36 / phiên</div>
+            </div>
+
+            <div class="range-row">
+              <div>
+                <div class="range-label-title">Phiên Bảng lương NFP</div>
+                <div class="range-label-sub">Thứ Sáu đầu tháng (20:30 / 19:30 giờ VN)</div>
+              </div>
+              <div class="range-pill-outer">
+                <div class="range-pill-inner bar-nfp"></div>
+              </div>
+              <div class="range-stat-value">~ $28 – $55 / phiên</div>
+            </div>
+
+            <div class="range-row">
+              <div>
+                <div class="range-label-title">Phiên Họp FOMC &amp; Dot Plot</div>
+                <div class="range-label-sub">Bao gồm cả 2 nhịp: Công bố lãi suất &amp; Họp báo</div>
+              </div>
+              <div class="range-pill-outer">
+                <div class="range-pill-inner bar-fomc"></div>
+              </div>
+              <div class="range-stat-value">~ $32 – $65 / phiên</div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =======================================================================
+           PHẦN 5: DISCLAIMER RÕ RÀNG, NỔI BẬT TRÊN GIAO DIỆN
+           ======================================================================= -->
+      <section id="disclaimer-section" class="disclaimer-card" aria-labelledby="disclaimer-heading">
+        <h2 id="disclaimer-heading" class="disclaimer-title">
+          🛡️ TUYÊN BỐ MIỄN TRỪ TRÁCH NHIỆM &amp; GIỚI HẠN PHÂN TÍCH (DISCLAIMER)
+        </h2>
+        <ul class="disclaimer-list">
+          <li>
+            <strong>Không tồn tại công thức dự đoán tuyệt đối:</strong> Không một chuyên gia, tổ chức tài chính hay mô hình AI nào có thể tính toán chính xác tuyệt đối "CPI/PPI ra X% thì giá Vàng sẽ tăng hoặc giảm đúng Y đô la". Phản ứng của XAUUSD phụ thuộc đồng thời vào mức độ lệch so với kỳ vọng (Forecast), sự định giá trước của thị trường (Priced-in), lợi suất trái phiếu kho bạc Mỹ, chỉ số DXY và tâm lý rủi ro địa chính trị.
+          </li>
+          <li>
+            <strong>Mục đích giáo dục &amp; tham khảo xu hướng:</strong> Toàn bộ nội dung, bảng kịch bản có điều kiện và biên độ thống kê lịch sử trên trang web <strong>XAUUSD Macro Glass</strong> chỉ mang tính chất giáo dục, hệ thống hóa kiến thức kinh tế vĩ mô và hỗ trợ lập kế hoạch quản trị rủi ro.
+          </li>
+          <li>
+            <strong>Không phải lời khuyên đầu tư:</strong> Trang web này không đưa ra bất kỳ khuyến nghị Mua/Bán (Buy/Sell signal) hay cam kết lợi nhuận nào. Thị trường tài chính và giao dịch ký quỹ luôn tiềm ẩn rủi ro cao (bao gồm giãn spread và trượt giá khi ra tin đỏ). Người dùng hoàn toàn tự chịu trách nhiệm với mọi quyết định giao dịch của mình.
+          </li>
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- [NÂNG CẤP]: THANH DOCK KÍNH LỎNG NỔI DƯỚI ĐÁY (FLOATING LIQUID DOCK GIÂY 00:20 - 00:22) -->
+    <nav class="floating-bottom-dock liquid-glass-clear caustic-rim" aria-label="Điều hướng nhanh cuối trang">
+      <a href="#top-overview" class="dock-item">
+        <span class="dock-ico">🏠</span>
+        <span class="dock-lbl">Tổng quan</span>
+      </a>
+      <a href="#calendar-section" class="dock-item">
+        <span class="dock-ico">📅</span>
+        <span class="dock-lbl">Lịch tin</span>
+      </a>
+      <a href="#analysis-section" class="dock-item">
+        <span class="dock-ico">🔬</span>
+        <span class="dock-lbl">Kịch bản</span>
+      </a>
+      <a href="#volatility-section" class="dock-item">
+        <span class="dock-ico">📊</span>
+        <span class="dock-lbl">Biên độ</span>
+      </a>
+      <a href="#disclaimer-section" class="dock-item">
+        <span class="dock-ico">🛡️</span>
+        <span class="dock-lbl">Lưu ý</span>
+      </a>
+    </nav>
+
+  </div>
+
+</body>
+</html>
+
