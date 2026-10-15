@@ -1,0 +1,1421 @@
+
+/* ==========================================================================
+   1. CSS VARIABLES (:ROOT) - HARMONYOS 7 OPTICAL LIQUID GLASS SYSTEM
+   ========================================================================== */
+:root {
+  /* Bảng màu nền Sáng Rực Rỡ (Mặc định - Cảnh 00:05 đến 00:12 trong video) */
+  --bg-base: #eaf2ff;
+  --canvas-gradient: 
+    radial-gradient(circle at 14% 14%, rgba(56, 189, 248, 0.48) 0%, transparent 45%),
+    radial-gradient(circle at 86% 18%, rgba(251, 113, 133, 0.44) 0%, transparent 45%),
+    radial-gradient(circle at 78% 82%, rgba(167, 139, 250, 0.5) 0%, transparent 50%),
+    radial-gradient(circle at 18% 86%, rgba(251, 191, 36, 0.4) 0%, transparent 45%),
+    linear-gradient(160deg, #ddeaff 0%, #f4eeff 52%, #ffeef4 100%);
+
+  /* Cấp độ kính 1: Kính siêu trong (Dock, Thanh chọn, Control Center) */
+  --glass-clear-bg: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.55) 0%,
+    rgba(255, 255, 255, 0.22) 50%,
+    rgba(255, 255, 255, 0.42) 100%
+  );
+  --glass-clear-blur: blur(18px) saturate(200%);
+
+  /* Cấp độ kính 2: Kính đọc nội dung (Thẻ lịch kinh tế, Bảng kịch bản) */
+  --glass-panel-bg: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.82) 0%,
+    rgba(255, 255, 255, 0.58) 55%,
+    rgba(255, 255, 255, 0.72) 100%
+  );
+  --glass-panel-blur: blur(28px) saturate(190%);
+
+  /* Viền khúc xạ ánh sáng 3D (Specular Rim & Inner Lens Curvature) */
+  --glass-border-light: rgba(255, 255, 255, 0.9);
+  --glass-shadow-outer: 
+    0 20px 44px -12px rgba(24, 39, 75, 0.15),
+    0 4px 14px -2px rgba(24, 39, 75, 0.07);
+  --glass-shadow-inset: 
+    inset 0 2.5px 4px 0 rgba(255, 255, 255, 0.98),
+    inset 0 -2px 5px 0 rgba(255, 255, 255, 0.5),
+    inset 2px 0 4px 0 rgba(255, 255, 255, 0.7);
+
+  /* Bề mặt phụ bên trong thẻ kính */
+  --inner-box-bg: rgba(255, 255, 255, 0.54);
+  --inner-box-border: rgba(255, 255, 255, 0.88);
+  --divider-line: rgba(15, 23, 42, 0.08);
+
+  /* Màu chữ độ tương phản cao */
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #52637a;
+
+  /* Màu sắc trạng thái kính theo xu hướng Vàng */
+  --emerald-bg: linear-gradient(135deg, rgba(16, 185, 129, 0.24), rgba(5, 150, 105, 0.12));
+  --emerald-border: rgba(16, 185, 129, 0.55);
+  --emerald-text: #065f46;
+
+  --rose-bg: linear-gradient(135deg, rgba(244, 63, 94, 0.25), rgba(225, 29, 72, 0.12));
+  --rose-border: rgba(244, 63, 94, 0.55);
+  --rose-text: #9f1239;
+
+  --blue-bg: linear-gradient(135deg, rgba(59, 130, 246, 0.24), rgba(37, 99, 235, 0.12));
+  --blue-border: rgba(59, 130, 246, 0.55);
+  --blue-text: #1e40af;
+
+  --amber-bg: linear-gradient(135deg, rgba(245, 158, 11, 0.28), rgba(217, 119, 6, 0.14));
+  --amber-border: rgba(245, 158, 11, 0.65);
+  --amber-text: #92400e;
+
+  /* Bo góc chuẩn HarmonyOS 7 */
+  --radius-xl: 32px;
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --radius-pill: 9999px;
+
+  /* Gia tốc lò xo chất lỏng (Spring Physics Easing) */
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-fluid: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ==========================================================================
+   2. CHẾ ĐỘ NỀN TỐI (DARK LUXURY SHOWCASE - CẢNH 00:23 ĐẾN 00:24 TRONG VIDEO)
+   ========================================================================== */
+#harmony-theme-switch:checked ~ .harmony-theme-shell {
+  --bg-base: #070b19;
+  --canvas-gradient: 
+    radial-gradient(circle at 16% 16%, rgba(37, 99, 235, 0.42) 0%, transparent 45%),
+    radial-gradient(circle at 85% 22%, rgba(225, 29, 72, 0.32) 0%, transparent 45%),
+    radial-gradient(circle at 75% 80%, rgba(124, 58, 237, 0.38) 0%, transparent 50%),
+    radial-gradient(circle at 20% 85%, rgba(245, 158, 11, 0.28) 0%, transparent 45%),
+    linear-gradient(160deg, #060914 0%, #0f172a 55%, #131129 100%);
+
+  --glass-clear-bg: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0.06) 50%,
+    rgba(255, 255, 255, 0.12) 100%
+  );
+  --glass-panel-bg: linear-gradient(
+    145deg,
+    rgba(30, 41, 59, 0.72) 0%,
+    rgba(15, 23, 42, 0.56) 60%,
+    rgba(30, 41, 59, 0.65) 100%
+  );
+
+  --glass-border-light: rgba(255, 255, 255, 0.28);
+  --glass-shadow-outer: 
+    0 22px 50px -12px rgba(0, 0, 0, 0.55),
+    0 4px 16px -2px rgba(0, 0, 0, 0.35);
+  --glass-shadow-inset: 
+    inset 0 1.5px 3px 0 rgba(255, 255, 255, 0.42),
+    inset 0 -1.5px 3px 0 rgba(255, 255, 255, 0.12),
+    inset 1.5px 0 3px 0 rgba(255, 255, 255, 0.22);
+
+  --inner-box-bg: rgba(15, 23, 42, 0.52);
+  --inner-box-border: rgba(255, 255, 255, 0.16);
+  --divider-line: rgba(255, 255, 255, 0.1);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+
+  --emerald-text: #6ee7b7;
+  --rose-text: #fda4af;
+  --blue-text: #93c5fd;
+  --amber-text: #fcd34d;
+}
+
+/* Đổi nhãn nút công tắc Sáng/Tối */
+.sr-only-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.theme-toggle-label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.theme-icon-dark {
+  display: none;
+}
+
+#harmony-theme-switch:checked ~ .harmony-theme-shell .theme-icon-light {
+  display: none;
+}
+
+#harmony-theme-switch:checked ~ .harmony-theme-shell .theme-icon-dark {
+  display: inline;
+}
+
+/* ==========================================================================
+   3. RESET & TỐI ƯU HIỆU NĂNG CAO NHẤT (60FPS / 120HZ)
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.harmony-theme-shell {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  min-height: 100vh;
+  position: relative;
+  transition: background-color 0.45s ease, color 0.35s ease;
+}
+
+/* ==========================================================================
+   4. HẬU CẢNH ĐA SẮC CHUYỂN ĐỘNG MƯỢT (AMBIENT HARMONY BACKGROUND ORBS)
+   ========================================================================== */
+.ambient-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--canvas-gradient);
+  transform: translate3d(0, 0, 0);
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(55px);
+  opacity: 0.72;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+.orb-1 {
+  width: clamp(260px, 38vw, 520px);
+  height: clamp(260px, 38vw, 520px);
+  background: radial-gradient(circle, #38bdf8 0%, #6366f1 100%);
+  top: -8%;
+  left: -6%;
+  animation: floatOrb1 18s ease-in-out infinite alternate;
+}
+
+.orb-2 {
+  width: clamp(240px, 34vw, 480px);
+  height: clamp(240px, 34vw, 480px);
+  background: radial-gradient(circle, #fb7185 0%, #f43f5e 60%, #fbbf24 100%);
+  top: 18%;
+  right: -8%;
+  animation: floatOrb2 22s ease-in-out infinite alternate;
+}
+
+.orb-3 {
+  width: clamp(280px, 42vw, 560px);
+  height: clamp(280px, 42vw, 560px);
+  background: radial-gradient(circle, #c084fc 0%, #60a5fa 100%);
+  bottom: 6%;
+  left: 10%;
+  animation: floatOrb1 24s ease-in-out infinite alternate-reverse;
+}
+
+.orb-4 {
+  width: clamp(200px, 28vw, 380px);
+  height: clamp(200px, 28vw, 380px);
+  background: radial-gradient(circle, #fde047 0%, #fb923c 100%);
+  bottom: 18%;
+  right: 12%;
+  opacity: 0.45;
+  animation: floatOrb2 20s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes floatOrb1 {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  100% { transform: translate3d(45px, 35px, 0) scale(1.08); }
+}
+
+@keyframes floatOrb2 {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  100% { transform: translate3d(-40px, 45px, 0) scale(1.06); }
+}
+
+/* ==========================================================================
+   5. HỆ THỐNG CLASS KÍNH LỎNG NÂNG CẤP (OPTICAL LIQUID GLASS & CAUSTIC RIM)
+   ========================================================================== */
+.liquid-glass-clear,
+.liquid-glass-panel {
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1.5px solid var(--glass-border-light);
+  box-shadow: var(--glass-shadow-outer), var(--glass-shadow-inset);
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  transition: 
+    transform 0.45s var(--ease-spring),
+    box-shadow 0.45s var(--ease-fluid),
+    border-color 0.35s ease;
+}
+
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .liquid-glass-clear {
+    background: var(--glass-clear-bg);
+    -webkit-backdrop-filter: var(--glass-clear-blur);
+    backdrop-filter: var(--glass-clear-blur);
+  }
+  .liquid-glass-panel {
+    background: var(--glass-panel-bg);
+    -webkit-backdrop-filter: var(--glass-panel-blur);
+    backdrop-filter: var(--glass-panel-blur);
+  }
+}
+
+/* Viền khúc xạ ánh sáng 4 góc + Sắc cầu vồng nhẹ của thấu kính dày (Giây 00:08) */
+.liquid-glass-clear::before,
+.liquid-glass-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.6px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(186, 230, 253, 0.65) 28%,
+    rgba(255, 255, 255, 0.12) 55%,
+    rgba(254, 205, 211, 0.55) 80%,
+    rgba(255, 255, 255, 0.92) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* [NÂNG CẤP]: Hiệu ứng gợn sóng nước lấp lánh ở mép trên kính (Giây 00:13) */
+.caustic-rim {
+  background-image: radial-gradient(
+    ellipse 65% 18px at 50% 0%,
+    rgba(255, 255, 255, 0.75) 0%,
+    transparent 100%
+  );
+}
+
+/* Quầng sáng lướt trên bề mặt kính khi chạm/hover (Optical Sheen) */
+.interactive-card::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -65%;
+  width: 55%;
+  height: 200%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.55) 50%,
+    transparent 100%
+  );
+  transform: rotate(25deg) translate3d(0, 0, 0);
+  transition: transform 0.68s var(--ease-fluid), opacity 0.45s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.interactive-card:hover {
+  transform: translate3d(0, -5px, 0) scale(1.01);
+  box-shadow: 
+    0 26px 52px -12px rgba(28, 45, 90, 0.22),
+    var(--glass-shadow-inset);
+}
+
+.interactive-card:hover::after {
+  opacity: 1;
+  transform: rotate(25deg) translate3d(330%, 0, 0);
+}
+
+/* Độ lún đàn hồi khi nhấn giữ trên điện thoại (Giống giây 00:18 Control Center) */
+.interactive-card:active {
+  transform: translate3d(0, -1px, 0) scale(0.988);
+}
+
+/* ==========================================================================
+   6. BỐ CỤC KHUNG CHÍNH & HEADER
+   ========================================================================== */
+.page-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: clamp(1rem, 2.8vw, 2rem) clamp(0.9rem, 2.5vw, 2rem) 7rem;
+}
+
+.top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1.4rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: 1.5rem;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.brand-orb {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 55%, #ea580c 100%);
+  box-shadow: 
+    0 6px 16px rgba(245, 158, 11, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.9);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  color: #fff;
+  font-size: 1.05rem;
+  flex-shrink: 0;
+}
+
+.brand-title {
+  font-size: clamp(1.05rem, 2vw, 1.28rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.brand-subtitle {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.status-pills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.42rem 0.95rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 700;
+  min-height: 38px;
+}
+
+.badge-amber-link {
+  text-decoration: none;
+  color: var(--amber-text);
+}
+
+.dot-pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f59e0b;
+  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.25);
+}
+
+/* ==========================================================================
+   7. SECTION 1: HERO & BẢNG CONTROL CENTER HARMONYOS 7 (CHUẨN GIÂY 00:06-00:10)
+   ========================================================================== */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.38fr 1fr;
+  gap: 1.35rem;
+  margin-bottom: 1.8rem;
+}
+
+.hero-main {
+  border-radius: var(--radius-xl);
+  padding: clamp(1.35rem, 3vw, 2.15rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.35rem;
+}
+
+.hero-header-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.xau-price-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.xau-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 800;
+  color: var(--amber-text);
+}
+
+.xau-price-value {
+  font-size: clamp(2.2rem, 4.6vw, 3.25rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: var(--text-primary);
+}
+
+.hero-meta-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+}
+
+.placeholder-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--amber-text);
+  background: var(--amber-bg);
+  border: 1px solid var(--amber-border);
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-pill);
+}
+
+.next-event-glass {
+  padding: 0.85rem 1.15rem;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 215px;
+}
+
+.next-event-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--blue-text);
+}
+
+.next-event-name {
+  font-size: 0.98rem;
+  font-weight: 900;
+  color: var(--text-primary);
+}
+
+.next-event-sub {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.hero-highlight-box {
+  padding: 1.1rem 1.25rem;
+  border-radius: var(--radius-lg);
+  background: var(--inner-box-bg);
+  border: 1px solid var(--inner-box-border);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.65);
+}
+
+.hero-highlight-title {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: var(--rose-text);
+  margin-bottom: 0.4rem;
+}
+
+.hero-highlight-text {
+  font-size: 0.87rem;
+  color: var(--text-secondary);
+}
+
+/* [NÂNG CẤP]: Control Center Bento Layout giống hệt giây 00:06 - 00:10 */
+.hero-control-center {
+  border-radius: var(--radius-xl);
+  padding: clamp(1.2rem, 2.4vw, 1.65rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.05rem;
+}
+
+.cc-bento-layout {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 0.9rem;
+  align-items: stretch;
+}
+
+.cc-left-pills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-content: space-between;
+}
+
+/* Nút viên thuốc màu hồng đỏ & xanh tím giống giây 00:07 */
+.cc-pill-btn {
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  min-height: 70px;
+  transition: transform 0.45s var(--ease-spring), box-shadow 0.35s ease;
+}
+
+.cc-pill-btn:hover,
+.cc-pill-btn:active {
+  transform: scale(1.045);
+}
+
+.cc-pill-pink {
+  background: linear-gradient(135deg, rgba(255, 82, 119, 0.84), rgba(255, 133, 161, 0.62));
+  color: #fff;
+  border: 1.5px solid rgba(255, 218, 226, 0.92);
+  box-shadow: 0 12px 24px rgba(244, 63, 94, 0.28), inset 0 2px 4px rgba(255, 255, 255, 0.85);
+}
+
+.cc-pill-indigo {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.82), rgba(56, 189, 248, 0.62));
+  color: #fff;
+  border: 1.5px solid rgba(224, 231, 255, 0.92);
+  box-shadow: 0 12px 24px rgba(79, 70, 229, 0.26), inset 0 2px 4px rgba(255, 255, 255, 0.85);
+}
+
+.cc-icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.28);
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  box-shadow: inset 0 1.5px 3px rgba(255, 255, 255, 0.85);
+}
+
+.cc-pill-sub {
+  font-size: 0.72rem;
+  opacity: 0.92;
+  font-weight: 700;
+}
+
+.cc-pill-main {
+  font-size: 0.92rem;
+  font-weight: 900;
+}
+
+/* [NÂNG CẤP]: 2 Thanh ống kính lỏng DỌC song song (Giống thanh Độ sáng & Âm lượng ở 00:08) */
+.cc-right-vertical-sliders {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.v-capsule-slider {
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.34);
+  border: 1.5px solid rgba(255, 255, 255, 0.92);
+  box-shadow: 
+    0 10px 24px rgba(15, 23, 42, 0.1),
+    inset 0 2px 5px rgba(255, 255, 255, 0.95);
+  position: relative;
+  overflow: hidden;
+  min-height: 152px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.85rem 0.35rem;
+  cursor: pointer;
+  transition: transform 0.5s var(--ease-spring);
+}
+
+/* Hiệu ứng kéo giãn đàn hồi Squash & Stretch như giây 00:08 */
+.v-capsule-slider:hover,
+.v-capsule-slider:active {
+  transform: scaleY(1.055) scaleX(0.96);
+}
+
+.v-capsule-fill {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--radius-pill);
+  z-index: 0;
+  transition: height 0.6s var(--ease-spring);
+}
+
+.fill-blue-glow {
+  background: linear-gradient(180deg, rgba(96, 165, 250, 0.92) 0%, rgba(37, 99, 235, 0.85) 100%);
+  box-shadow: inset 0 3px 6px rgba(255, 255, 255, 0.9);
+}
+
+.fill-gold-glow {
+  background: linear-gradient(180deg, rgba(253, 224, 71, 0.92) 0%, rgba(245, 158, 11, 0.85) 100%);
+  box-shadow: inset 0 3px 6px rgba(255, 255, 255, 0.9);
+}
+
+.v-capsule-meta {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(15, 23, 42, 0.45);
+}
+
+.v-capsule-val {
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.v-capsule-icon {
+  font-size: 1.15rem;
+}
+
+.v-capsule-lbl {
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+/* Hàng 4 nút kính tròn bên dưới Control Center (Giống giây 00:06 & 00:18) */
+.cc-round-orbs-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.65rem;
+}
+
+.cc-round-orb {
+  text-decoration: none;
+  color: var(--text-primary);
+  background: var(--inner-box-bg);
+  border: 1.5px solid var(--inner-box-border);
+  box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 0.55rem 0.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  transition: transform 0.4s var(--ease-spring), background 0.3s ease;
+}
+
+.cc-round-orb:hover,
+.cc-round-orb:active {
+  transform: scale(1.07);
+}
+
+.cc-round-orb.active-orb {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.82), rgba(37, 99, 235, 0.65));
+  color: #fff;
+}
+
+.cc-round-orb.warn-orb {
+  background: var(--amber-bg);
+  border-color: var(--amber-border);
+}
+
+.orb-ico {
+  font-size: 1.05rem;
+}
+
+.orb-txt {
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+/* ==========================================================================
+   8. TIÊU ĐỀ SECTION CHUNG
+   ========================================================================== */
+.section-header {
+  margin: 2.4rem 0 1.15rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.section-title {
+  font-size: clamp(1.3rem, 2.5vw, 1.65rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.section-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  max-width: 760px;
+}
+
+/* ==========================================================================
+   9. SECTION 2: LỊCH KINH TẾ & NGĂN KÉO LỊCH SỬ FOREX FACTORY (GIÂY 00:08-00:11)
+   ========================================================================== */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+
+.calendar-card {
+  border-radius: var(--radius-lg);
+  padding: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.95rem;
+}
+
+.cal-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.85rem;
+}
+
+.cal-title {
+  font-size: 1.06rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.cal-time {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-top: 0.15rem;
+}
+
+.impact-badge {
+  padding: 0.28rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+
+.impact-high {
+  background: var(--rose-bg);
+  border: 1px solid var(--rose-border);
+  color: var(--rose-text);
+}
+
+.cal-numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  background: var(--inner-box-bg);
+  border: 1px solid var(--inner-box-border);
+  border-radius: var(--radius-md);
+  padding: 0.75rem;
+  text-align: center;
+  margin-bottom: 0.85rem;
+}
+
+.num-col-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.num-col-val {
+  font-size: 1.04rem;
+  font-weight: 900;
+  margin-top: 0.15rem;
+}
+
+.val-actual-hot {
+  color: #10b981;
+  font-weight: 900;
+}
+
+.val-actual-cool {
+  color: #f43f5e;
+  font-weight: 900;
+}
+
+.val-forecast-miss {
+  color: var(--amber-text);
+  text-decoration: underline wavy rgba(245, 158, 11, 0.65);
+}
+
+.cal-deviation-note {
+  font-size: 0.8rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+/* [NÂNG CẤP]: Ngăn kéo bung mở chuỗi lịch sử Forex Factory trong mỗi thẻ */
+.glass-history-drawer {
+  border-top: 1px solid var(--divider-line);
+  padding-top: 0.75rem;
+}
+
+.drawer-summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--blue-text);
+  padding: 0.45rem 0.75rem;
+  border-radius: var(--radius-pill);
+  background: var(--blue-bg);
+  border: 1px solid var(--blue-border);
+  transition: transform 0.35s var(--ease-spring);
+}
+
+.drawer-summary::-webkit-details-marker {
+  display: none;
+}
+
+.drawer-summary:hover,
+.drawer-summary:active {
+  transform: scale(1.02);
+}
+
+.drawer-chevron {
+  transition: transform 0.35s var(--ease-spring);
+}
+
+.glass-history-drawer[open] .drawer-chevron {
+  transform: rotate(180deg);
+}
+
+.drawer-body {
+  margin-top: 0.75rem;
+  background: var(--inner-box-bg);
+  border: 1px solid var(--inner-box-border);
+  border-radius: 14px;
+  padding: 0.65rem;
+  animation: springExpand 0.42s var(--ease-spring);
+}
+
+@keyframes springExpand {
+  0% {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.mini-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+.mini-history-table th {
+  color: var(--text-muted);
+  padding: 0.35rem 0.4rem;
+  border-bottom: 1px solid var(--divider-line);
+}
+
+.mini-history-table td {
+  padding: 0.38rem 0.4rem;
+  border-bottom: 1px solid var(--divider-line);
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.mini-history-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ==========================================================================
+   10. SECTION 3: THANH TAB "GIỌT NƯỚC TRƯỢT" THUẦN CSS (GIÂY 00:20 - 00:22)
+   ========================================================================== */
+.macro-filter-container {
+  margin-top: 0.5rem;
+}
+
+.filter-radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.liquid-pill-nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  position: relative;
+  padding: 0.42rem;
+  border-radius: var(--radius-pill);
+  margin: 0 auto 1.6rem;
+  max-width: 840px;
+  user-select: none;
+}
+
+.pill-tab-label {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0.72rem 0.5rem;
+  font-size: clamp(0.75rem, 1.6vw, 0.9rem);
+  font-weight: 800;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-radius: var(--radius-pill);
+  transition: color 0.35s ease, transform 0.35s var(--ease-spring);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pill-tab-label:active {
+  transform: scale(0.93);
+}
+
+/* Khối giọt nước sáng trắng trượt bên dưới (Liquid Lens Droplet Indicator) */
+.liquid-droplet {
+  position: absolute;
+  top: 0.42rem;
+  bottom: 0.42rem;
+  left: 0.42rem;
+  width: calc((100% - 0.84rem) / 5);
+  border-radius: var(--radius-pill);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.98) 0%,
+    rgba(255, 255, 255, 0.82) 100%
+  );
+  box-shadow: 
+    0 6px 20px rgba(59, 130, 246, 0.28),
+    0 0 18px rgba(255, 255, 255, 0.95),
+    inset 0 2px 4px rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  z-index: 1;
+  transition: transform 0.55s var(--ease-spring);
+  will-change: transform;
+  pointer-events: none;
+}
+
+#tab-all:checked ~ .liquid-pill-nav .liquid-droplet {
+  transform: translate3d(0%, 0, 0);
+}
+#tab-cpi:checked ~ .liquid-pill-nav .liquid-droplet {
+  transform: translate3d(100%, 0, 0);
+}
+#tab-ppi:checked ~ .liquid-pill-nav .liquid-droplet {
+  transform: translate3d(200%, 0, 0);
+}
+#tab-nfp:checked ~ .liquid-pill-nav .liquid-droplet {
+  transform: translate3d(300%, 0, 0);
+}
+#tab-fomc:checked ~ .liquid-pill-nav .liquid-droplet {
+  transform: translate3d(400%, 0, 0);
+}
+
+#tab-all:checked ~ .liquid-pill-nav label[for="tab-all"],
+#tab-cpi:checked ~ .liquid-pill-nav label[for="tab-cpi"],
+#tab-ppi:checked ~ .liquid-pill-nav label[for="tab-ppi"],
+#tab-nfp:checked ~ .liquid-pill-nav label[for="tab-nfp"],
+#tab-fomc:checked ~ .liquid-pill-nav label[for="tab-fomc"] {
+  color: #0f172a;
+}
+
+.indicator-cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.indicator-section-card {
+  border-radius: var(--radius-xl);
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+#tab-cpi:checked ~ .indicator-cards-stack .indicator-section-card:not(.card-cpi),
+#tab-ppi:checked ~ .indicator-cards-stack .indicator-section-card:not(.card-ppi),
+#tab-nfp:checked ~ .indicator-cards-stack .indicator-section-card:not(.card-nfp),
+#tab-fomc:checked ~ .indicator-cards-stack .indicator-section-card:not(.card-fomc) {
+  display: none;
+}
+
+.ind-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--divider-line);
+}
+
+.ind-title-group h3 {
+  font-size: clamp(1.18rem, 2.2vw, 1.42rem);
+  font-weight: 900;
+  color: var(--text-primary);
+}
+
+.ind-meaning {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.2rem;
+}
+
+.scenario-table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--inner-box-border);
+  background: var(--inner-box-bg);
+}
+
+.scenario-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 620px;
+  text-align: left;
+  font-size: 0.88rem;
+}
+
+.scenario-table th {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 0.85rem 1rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--divider-line);
+}
+
+.scenario-table td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--divider-line);
+  color: var(--text-secondary);
+  vertical-align: top;
+}
+
+.scenario-table tr:last-child td {
+  border-bottom: none;
+}
+
+.trend-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-weight: 800;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.trend-bullish {
+  background: var(--emerald-bg);
+  border: 1px solid var(--emerald-border);
+  color: var(--emerald-text);
+}
+
+.trend-bearish {
+  background: var(--rose-bg);
+  border: 1px solid var(--rose-border);
+  color: var(--rose-text);
+}
+
+.trend-neutral {
+  background: var(--blue-bg);
+  border: 1px solid var(--blue-border);
+  color: var(--blue-text);
+}
+
+.card-footnote {
+  margin-top: 0.95rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   11. SECTION 4: BIÊN ĐỘ BIẾN ĐỘNG LỊCH SỬ (LIQUID CAPSULE BARS)
+   ========================================================================== */
+.history-range-card {
+  border-radius: var(--radius-xl);
+  padding: clamp(1.35rem, 3vw, 2.1rem);
+}
+
+.warning-banner-inline {
+  background: var(--amber-bg);
+  border: 1.5px solid var(--amber-border);
+  color: var(--amber-text);
+  padding: 0.85rem 1.15rem;
+  border-radius: var(--radius-md);
+  font-size: 0.86rem;
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+}
+
+.range-bars-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.range-row {
+  display: grid;
+  grid-template-columns: 220px 1fr 150px;
+  align-items: center;
+  gap: 1rem;
+}
+
+.range-label-title {
+  font-weight: 800;
+  font-size: 0.92rem;
+  color: var(--text-primary);
+}
+
+.range-label-sub {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+.range-pill-outer {
+  height: 38px;
+  border-radius: var(--radius-pill);
+  background: var(--inner-box-bg);
+  border: 1.5px solid var(--inner-box-border);
+  box-shadow: 
+    inset 0 2px 4px rgba(15, 23, 42, 0.08),
+    inset 0 1px 2px rgba(255, 255, 255, 0.8);
+  padding: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.range-pill-inner {
+  height: 100%;
+  border-radius: var(--radius-pill);
+  box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.85);
+  transition: transform 0.5s var(--ease-spring);
+  transform-origin: left center;
+}
+
+.range-row:hover .range-pill-inner {
+  transform: scaleX(1.03);
+}
+
+.bar-cpi {
+  width: 78%;
+  background: linear-gradient(90deg, #f43f5e 0%, #fb923c 100%);
+}
+
+.bar-ppi {
+  width: 64%;
+  background: linear-gradient(90deg, #3b82f6 0%, #38bdf8 100%);
+}
+
+.bar-nfp {
+  width: 82%;
+  background: linear-gradient(90deg, #8b5cf6 0%, #ec4899 100%);
+}
+
+.bar-fomc {
+  width: 92%;
+  background: linear-gradient(90deg, #f59e0b 0%, #ef4444 100%);
+}
+
+.range-stat-value {
+  text-align: right;
+  font-weight: 900;
+  font-size: 0.92rem;
+  color: var(--text-primary);
+}
+
+/* ==========================================================================
+   12. SECTION 5: KHUNG DISCLAIMER NỔI BẬT (AMBER GOLD LIQUID GLASS)
+   ========================================================================== */
+.disclaimer-card {
+  margin-top: 2.5rem;
+  border-radius: var(--radius-xl);
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  background: linear-gradient(
+    135deg,
+    rgba(254, 243, 199, 0.88) 0%,
+    rgba(253, 230, 138, 0.72) 100%
+  );
+  border: 2px solid rgba(245, 158, 11, 0.8);
+  box-shadow: 
+    0 20px 45px -12px rgba(180, 83, 9, 0.2),
+    inset 0 2px 4px rgba(255, 255, 255, 0.95);
+}
+
+.disclaimer-title {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  font-weight: 900;
+  color: #78350f;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.disclaimer-list {
+  padding-left: 1.25rem;
+  color: #78350f;
+  font-size: 0.92rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* ==========================================================================
+   13. [NÂNG CẤP]: FLOATING BOTTOM LIQUID DOCK (TÁI HIỆN GIÂY 00:20 - 00:22)
+   ========================================================================== */
+.floating-bottom-dock {
+  position: fixed;
+  bottom: 1.1rem;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.42rem 0.6rem;
+  border-radius: var(--radius-pill);
+  width: max-content;
+  max-width: calc(100vw - 1.5rem);
+}
+
+.dock-item {
+  text-decoration: none;
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.42rem 0.95rem;
+  border-radius: var(--radius-pill);
+  min-height: 48px;
+  position: relative;
+  transition: 
+    transform 0.45s var(--ease-spring),
+    background 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* Hiệu ứng giọt nước sáng trắng phồng lên khi chạm/hover vào từng mục trên Dock */
+.dock-item:hover,
+.dock-item:focus-visible,
+.dock-item:active {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.96) 0%,
+    rgba(255, 255, 255, 0.78) 100%
+  );
+  color: #0f172a;
+  transform: translateY(-4px) scaleX(1.08) scaleY(1.05);
+  box-shadow: 
+    0 8px 22px rgba(59, 130, 246, 0.32),
+    0 0 18px rgba(255, 255, 255, 0.95),
+    inset 0 2px 3px rgba(255, 255, 255, 1);
+}
+
+.dock-ico {
+  font-size: 1.1rem;
+  line-height: 1.1;
+}
+
+.dock-lbl {
+  font-size: 0.68rem;
+  font-weight: 800;
+  margin-top: 0.1rem;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   14. RESPONSIVE BREAKPOINTS (ĐIỆN THOẠI / IPAD / MÁY TÍNH)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .range-row {
+    grid-template-columns: 180px 1fr 130px;
+  }
+}
+
+@media (max-width: 640px) {
+  .top-bar {
+    border-radius: var(--radius-lg);
+    padding: 1rem;
+  }
+  .cc-bento-layout {
+    grid-template-columns: 1fr;
+  }
+  .v-capsule-slider {
+    min-height: 120px;
+  }
+  .liquid-pill-nav {
+    padding: 0.3rem;
+  }
+  .pill-tab-label {
+    font-size: 0.72rem;
+    padding: 0.6rem 0.2rem;
+  }
+  .range-row {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px dashed var(--divider-line);
+  }
+  .range-stat-value {
+    text-align: left;
+  }
+  .dock-item {
+    padding: 0.4rem 0.65rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
